@@ -16,8 +16,16 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     // se tiver light mode adicionar a imagem light
     img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute(
+      "alt",
+      "Foto de Ana Scorsim sorrindo, usando camiseta cinza e calça jeans, com mar ao fundo"
+    )
   } else {
     // se tiver sem light mode manter a img normal
     img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute(
+      "alt",
+      "Foto de Ana Scorsim sorrindo, usando camiseta curta e calça jeans, com árvore e carros ao fundo"
+    )
   }
 }
